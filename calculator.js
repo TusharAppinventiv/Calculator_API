@@ -51,6 +51,6 @@ app.post('/subtract', (req, res) => {
     res.send(`The Square root of ${num1} and ${num2} is ${result}`);
   });
 
-app.listen(3008, () => {
-  console.log('Server started on port 3000');
+app.listen(8080, () => {
+  console.log('Server started on port 8080');
 });
