@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 80;
 
 app.use(express.json());
 app.post('/sum', (req, res) => {
@@ -51,6 +52,6 @@ app.post('/subtract', (req, res) => {
     res.send(`The Square root of ${num1} and ${num2} is ${result}`);
   });
 
-app.listen(8080, () => {
-  console.log('Server started on port 8080');
+app.listen(port, () => {
+  console.log('Server started on port 80');
 });
